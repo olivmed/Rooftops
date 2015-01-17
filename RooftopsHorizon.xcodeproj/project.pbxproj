@@ -33,6 +33,8 @@
 		AB443F1419E8610D004D1B0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB443F1319E8610D004D1B0E /* Images.xcassets */; };
 		AB443F1719E8610D004D1B0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB443F1519E8610D004D1B0E /* LaunchScreen.xib */; };
 		AB443F2319E8610D004D1B0E /* RooftopsHorizonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB443F2219E8610D004D1B0E /* RooftopsHorizonTests.m */; };
+		AB79BB9D1A6ADDCD00C607B7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */; };
+		AB79BB9E1A6ADDCD00C607B7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */; };
 		ABA270C51A3AF22800FD78F9 /* logo_rh.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA270C41A3AF22800FD78F9 /* logo_rh.png */; };
 		ABE786BC1A40D0C200E930AC /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE786B51A40D0C200E930AC /* CSStickyHeaderFlowLayout.m */; };
 		ABE786BD1A40D0C200E930AC /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE786B71A40D0C200E930AC /* CSStickyHeaderFlowLayoutAttributes.m */; };
@@ -107,6 +109,8 @@
 		AB443F1C19E8610D004D1B0E /* RooftopsHorizonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RooftopsHorizonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB443F2119E8610D004D1B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB443F2219E8610D004D1B0E /* RooftopsHorizonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RooftopsHorizonTests.m; sourceTree = "<group>"; };
+		AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		ABA270C41A3AF22800FD78F9 /* logo_rh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_rh.png; sourceTree = "<group>"; };
 		ABCCF2681A5E864C002AA78B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		ABCCF2691A5E8754002AA78B /* RooftopsHorizon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RooftopsHorizon-Prefix.pch"; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB79BB9D1A6ADDCD00C607B7 /* Crashlytics.framework in Frameworks */,
+				AB79BB9E1A6ADDCD00C607B7 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +221,8 @@
 		AB443EFA19E8610D004D1B0E = {
 			isa = PBXGroup;
 			children = (
+				AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */,
+				AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */,
 				AB443F0519E8610D004D1B0E /* RooftopsHorizon */,
 				AB443F1F19E8610D004D1B0E /* RooftopsHorizonTests */,
 				AB443F0419E8610D004D1B0E /* Products */,
@@ -343,6 +351,7 @@
 				AB443EFF19E8610D004D1B0E /* Sources */,
 				AB443F0019E8610D004D1B0E /* Frameworks */,
 				AB443F0119E8610D004D1B0E /* Resources */,
+				AB79BB9A1A6ADD2E00C607B7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -433,6 +442,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB79BB9A1A6ADD2E00C607B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run c2e190d5f901b574299ce315a088c9046a9cfeb5 f3a14ddc575adf7b03a732b1412803756d01a2eaed544e5de7c2c3a5e5cebd75";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB443EFF19E8610D004D1B0E /* Sources */ = {
@@ -587,6 +612,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "RooftopsHorizon/RooftopsHorizon-Prefix.pch";
 				INFOPLIST_FILE = RooftopsHorizon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -603,6 +632,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "RooftopsHorizon/RooftopsHorizon-Prefix.pch";
 				INFOPLIST_FILE = RooftopsHorizon/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
