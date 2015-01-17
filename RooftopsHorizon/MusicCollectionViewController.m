@@ -27,7 +27,7 @@ static NSString * const reuseIdentifier = @"MusicCell";
     
     // Do any additional setup after loading the view.
         
-    // Locate your layout
+    
     CSStickyHeaderFlowLayout *layout = (id)self.collectionViewLayout;
     if ([layout isKindOfClass:[CSStickyHeaderFlowLayout class]]) {
         layout.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 200);
