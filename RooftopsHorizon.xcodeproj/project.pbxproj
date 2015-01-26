@@ -33,9 +33,11 @@
 		AB443F1419E8610D004D1B0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB443F1319E8610D004D1B0E /* Images.xcassets */; };
 		AB443F1719E8610D004D1B0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB443F1519E8610D004D1B0E /* LaunchScreen.xib */; };
 		AB443F2319E8610D004D1B0E /* RooftopsHorizonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB443F2219E8610D004D1B0E /* RooftopsHorizonTests.m */; };
+		AB5261311A763A4C00884C82 /* WSGetArtists.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5261301A763A4C00884C82 /* WSGetArtists.m */; };
 		AB79BB9D1A6ADDCD00C607B7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */; };
 		AB79BB9E1A6ADDCD00C607B7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */; };
 		ABA270C51A3AF22800FD78F9 /* logo_rh.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA270C41A3AF22800FD78F9 /* logo_rh.png */; };
+		ABAC54131A7638D0004D6A1C /* WSRooftopsHorizon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAC54121A7638D0004D6A1C /* WSRooftopsHorizon.m */; };
 		ABE786BC1A40D0C200E930AC /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE786B51A40D0C200E930AC /* CSStickyHeaderFlowLayout.m */; };
 		ABE786BD1A40D0C200E930AC /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE786B71A40D0C200E930AC /* CSStickyHeaderFlowLayoutAttributes.m */; };
 		ABE786BE1A40D0C200E930AC /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = ABE786B91A40D0C200E930AC /* .gitkeep */; };
@@ -109,9 +111,13 @@
 		AB443F1C19E8610D004D1B0E /* RooftopsHorizonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RooftopsHorizonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB443F2119E8610D004D1B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB443F2219E8610D004D1B0E /* RooftopsHorizonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RooftopsHorizonTests.m; sourceTree = "<group>"; };
-		AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		AB52612F1A763A4C00884C82 /* WSGetArtists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSGetArtists.h; sourceTree = "<group>"; };
+		AB5261301A763A4C00884C82 /* WSGetArtists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSGetArtists.m; sourceTree = "<group>"; };
+		AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../Crashlytics.framework; sourceTree = "<group>"; };
+		AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
 		ABA270C41A3AF22800FD78F9 /* logo_rh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_rh.png; sourceTree = "<group>"; };
+		ABAC54111A7638D0004D6A1C /* WSRooftopsHorizon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSRooftopsHorizon.h; sourceTree = "<group>"; };
+		ABAC54121A7638D0004D6A1C /* WSRooftopsHorizon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSRooftopsHorizon.m; sourceTree = "<group>"; };
 		ABCCF2681A5E864C002AA78B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		ABCCF2691A5E8754002AA78B /* RooftopsHorizon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RooftopsHorizon-Prefix.pch"; sourceTree = "<group>"; };
 		ABE786B41A40D0C200E930AC /* CSStickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayout.h; sourceTree = "<group>"; };
@@ -199,6 +205,10 @@
 		AB1E95651A40C5FE0064E087 /* Webservices */ = {
 			isa = PBXGroup;
 			children = (
+				ABAC54111A7638D0004D6A1C /* WSRooftopsHorizon.h */,
+				ABAC54121A7638D0004D6A1C /* WSRooftopsHorizon.m */,
+				AB52612F1A763A4C00884C82 /* WSGetArtists.h */,
+				AB5261301A763A4C00884C82 /* WSGetArtists.m */,
 			);
 			name = Webservices;
 			sourceTree = "<group>";
@@ -221,8 +231,6 @@
 		AB443EFA19E8610D004D1B0E = {
 			isa = PBXGroup;
 			children = (
-				AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */,
-				AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */,
 				AB443F0519E8610D004D1B0E /* RooftopsHorizon */,
 				AB443F1F19E8610D004D1B0E /* RooftopsHorizonTests */,
 				AB443F0419E8610D004D1B0E /* Products */,
@@ -304,6 +312,8 @@
 		ABE786B21A40D04A00E930AC /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */,
+				AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */,
 				AB1A94991A65173900364346 /* UIKit+AFNetworking */,
 				AB1A947C1A65172500364346 /* AFNetworking */,
 				ABE786B31A40D0C200E930AC /* CSStikyHeaderFlowLayout */,
@@ -487,6 +497,8 @@
 				AB1E95691A40C8980064E087 /* HomeViewController.m in Sources */,
 				AB1A94B21A65173900364346 /* UIWebView+AFNetworking.m in Sources */,
 				AB1A94931A65172500364346 /* AFNetworkReachabilityManager.m in Sources */,
+				ABAC54131A7638D0004D6A1C /* WSRooftopsHorizon.m in Sources */,
+				AB5261311A763A4C00884C82 /* WSGetArtists.m in Sources */,
 				AB1A94AF1A65173900364346 /* UIImageView+AFNetworking.m in Sources */,
 				AB1A94911A65172500364346 /* AFHTTPRequestOperationManager.m in Sources */,
 			);
