@@ -13,6 +13,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "Constants.h"
+#import "AFNetworking/AFNetworking.h"
 
 //Log
 #ifdef DEBUG

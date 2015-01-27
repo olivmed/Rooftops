@@ -15,6 +15,8 @@
 @implementation MusicCollectionViewController
 
 static NSString * const reuseIdentifier = @"MusicCell";
+NSArray* artWorks;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,7 +28,6 @@ static NSString * const reuseIdentifier = @"MusicCell";
     [self.collectionView registerClass:[CSCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
-        
     
     CSStickyHeaderFlowLayout *layout = (id)self.collectionViewLayout;
     if ([layout isKindOfClass:[CSStickyHeaderFlowLayout class]]) {
@@ -35,13 +36,21 @@ static NSString * const reuseIdentifier = @"MusicCell";
     }
     layout.disableStickyHeaders = YES;
     self.collectionView.scrollIndicatorInsets = UIEdgeInsetsMake(44, 0, 0, 0);
-
+    artWorks = @[@"ARTWORK_YO-ZU.png",
+                          @"ARTWORK-Lee-x-Matthews.png",
+                          @"RH005-ARTWORK.png",
+                          @"RH004-ARTWORK.png",
+                          @"ART-TIGERZ3.png",
+                          @"RH002-ARTWORK.jpg",
+                          @"ARTWORK_RELEASE_1.png"
+                          ];
     
     // Locate the nib and register it to your collection view
     UINib *headerNib = [UINib nibWithNibName:@"CollectionHeaderParallax" bundle:nil];
     [self.collectionView registerNib:headerNib
           forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader
                  withReuseIdentifier:@"header"];
+    
 
 }
 
@@ -69,7 +78,7 @@ static NSString * const reuseIdentifier = @"MusicCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 10;
+    return [artWorks count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -81,8 +90,15 @@ static NSString * const reuseIdentifier = @"MusicCell";
     
 
     // Configure the cell
+    NSString* mTitle = [NSString stringWithFormat:@"Track ID #%ld", (long)indexPath.row];
+    NSDictionary* mergeData = @{
+                                                                         @"title":mTitle,
+                                                                         @"image":[artWorks objectAtIndex:indexPath.row],
+                                                                         };
 
-    [cell setData:[NSString stringWithFormat:@"Song title %ld", (long)indexPath.row]];
+    
+
+    [cell setData:mergeData];
     
     return cell;
 }

@@ -15,7 +15,8 @@
 }
 
 
--(void)setData:(NSString *)data{
-    self.cellLabel.text = data;
+-(void)setData:(NSDictionary *)data{
+    self.cellLabel.text = [data objectForKey:@"title"];
+    self.cellImg.image = [UIImage imageNamed:[data objectForKey:@"image"]];
 }
 @end

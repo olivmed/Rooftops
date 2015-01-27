@@ -10,7 +10,8 @@
 
 @interface CSCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *cellLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *cellImg;
 
 
--(void)setData:(NSString*)data;
+-(void)setData:(NSDictionary*)data;
 @end

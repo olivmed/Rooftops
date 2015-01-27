@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB089F1E1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB089F1D1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg */; };
 		AB1A94901A65172500364346 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1A947E1A65172500364346 /* AFHTTPRequestOperation.m */; };
 		AB1A94911A65172500364346 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1A94801A65172500364346 /* AFHTTPRequestOperationManager.m */; };
 		AB1A94921A65172500364346 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1A94821A65172500364346 /* AFHTTPSessionManager.m */; };
@@ -38,6 +39,16 @@
 		AB79BB9E1A6ADDCD00C607B7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */; };
 		ABA270C51A3AF22800FD78F9 /* logo_rh.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA270C41A3AF22800FD78F9 /* logo_rh.png */; };
 		ABAC54131A7638D0004D6A1C /* WSRooftopsHorizon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAC54121A7638D0004D6A1C /* WSRooftopsHorizon.m */; };
+		ABC076951A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076941A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png */; };
+		ABC076971A77989A00CDA0F3 /* bg_nuit.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076961A77989A00CDA0F3 /* bg_nuit.png */; };
+		ABC076991A779B2C00CDA0F3 /* ARTWORK_RELEASE_1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076981A779B2C00CDA0F3 /* ARTWORK_RELEASE_1.png */; };
+		ABC0769C1A779B5200CDA0F3 /* RH002-ARTWORK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABC0769B1A779B5200CDA0F3 /* RH002-ARTWORK.jpg */; };
+		ABC0769E1A779B6000CDA0F3 /* ART-TIGERZ3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC0769D1A779B6000CDA0F3 /* ART-TIGERZ3.png */; };
+		ABC076A01A779B6F00CDA0F3 /* RH004-ARTWORK.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC0769F1A779B6F00CDA0F3 /* RH004-ARTWORK.png */; };
+		ABC076A21A779B7C00CDA0F3 /* RH005-ARTWORK.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076A11A779B7C00CDA0F3 /* RH005-ARTWORK.png */; };
+		ABC076A51A779B9000CDA0F3 /* ARTWORK_YO-ZU.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076A41A779B9000CDA0F3 /* ARTWORK_YO-ZU.png */; };
+		ABC076A71A779C0600CDA0F3 /* ARTWORK-Lee-x-Matthews.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076A61A779C0600CDA0F3 /* ARTWORK-Lee-x-Matthews.png */; };
+		ABC076AB1A77A29800CDA0F3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC076AA1A77A29800CDA0F3 /* SWRevealViewController.m */; };
 		ABE786BC1A40D0C200E930AC /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE786B51A40D0C200E930AC /* CSStickyHeaderFlowLayout.m */; };
 		ABE786BD1A40D0C200E930AC /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE786B71A40D0C200E930AC /* CSStickyHeaderFlowLayoutAttributes.m */; };
 		ABE786BE1A40D0C200E930AC /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = ABE786B91A40D0C200E930AC /* .gitkeep */; };
@@ -58,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB089F1D1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg"; sourceTree = "<group>"; };
 		AB1A947D1A65172500364346 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		AB1A947E1A65172500364346 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		AB1A947F1A65172500364346 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -118,6 +130,17 @@
 		ABA270C41A3AF22800FD78F9 /* logo_rh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_rh.png; sourceTree = "<group>"; };
 		ABAC54111A7638D0004D6A1C /* WSRooftopsHorizon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSRooftopsHorizon.h; sourceTree = "<group>"; };
 		ABAC54121A7638D0004D6A1C /* WSRooftopsHorizon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSRooftopsHorizon.m; sourceTree = "<group>"; };
+		ABC076941A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LOGO_ROOFTOPS-HORIZON-Blanc.png"; sourceTree = "<group>"; };
+		ABC076961A77989A00CDA0F3 /* bg_nuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_nuit.png; sourceTree = "<group>"; };
+		ABC076981A779B2C00CDA0F3 /* ARTWORK_RELEASE_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARTWORK_RELEASE_1.png; sourceTree = "<group>"; };
+		ABC0769B1A779B5200CDA0F3 /* RH002-ARTWORK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "RH002-ARTWORK.jpg"; sourceTree = "<group>"; };
+		ABC0769D1A779B6000CDA0F3 /* ART-TIGERZ3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ART-TIGERZ3.png"; sourceTree = "<group>"; };
+		ABC0769F1A779B6F00CDA0F3 /* RH004-ARTWORK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RH004-ARTWORK.png"; sourceTree = "<group>"; };
+		ABC076A11A779B7C00CDA0F3 /* RH005-ARTWORK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RH005-ARTWORK.png"; sourceTree = "<group>"; };
+		ABC076A41A779B9000CDA0F3 /* ARTWORK_YO-ZU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARTWORK_YO-ZU.png"; sourceTree = "<group>"; };
+		ABC076A61A779C0600CDA0F3 /* ARTWORK-Lee-x-Matthews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARTWORK-Lee-x-Matthews.png"; sourceTree = "<group>"; };
+		ABC076A91A77A29800CDA0F3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		ABC076AA1A77A29800CDA0F3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		ABCCF2681A5E864C002AA78B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		ABCCF2691A5E8754002AA78B /* RooftopsHorizon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RooftopsHorizon-Prefix.pch"; sourceTree = "<group>"; };
 		ABE786B41A40D0C200E930AC /* CSStickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayout.h; sourceTree = "<group>"; };
@@ -293,9 +316,36 @@
 		ABA270C31A3AF1B200FD78F9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ABC0769A1A779B3200CDA0F3 /* artwork */,
+				ABC076961A77989A00CDA0F3 /* bg_nuit.png */,
+				ABC076941A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png */,
+				AB089F1D1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg */,
 				ABA270C41A3AF22800FD78F9 /* logo_rh.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		ABC0769A1A779B3200CDA0F3 /* artwork */ = {
+			isa = PBXGroup;
+			children = (
+				ABC076A61A779C0600CDA0F3 /* ARTWORK-Lee-x-Matthews.png */,
+				ABC076A41A779B9000CDA0F3 /* ARTWORK_YO-ZU.png */,
+				ABC076A11A779B7C00CDA0F3 /* RH005-ARTWORK.png */,
+				ABC0769F1A779B6F00CDA0F3 /* RH004-ARTWORK.png */,
+				ABC0769D1A779B6000CDA0F3 /* ART-TIGERZ3.png */,
+				ABC0769B1A779B5200CDA0F3 /* RH002-ARTWORK.jpg */,
+				ABC076981A779B2C00CDA0F3 /* ARTWORK_RELEASE_1.png */,
+			);
+			name = artwork;
+			sourceTree = "<group>";
+		};
+		ABC076A81A77A29800CDA0F3 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ABC076A91A77A29800CDA0F3 /* SWRevealViewController.h */,
+				ABC076AA1A77A29800CDA0F3 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		ABCCF2671A5E8621002AA78B /* Core */ = {
@@ -312,6 +362,7 @@
 		ABE786B21A40D04A00E930AC /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				ABC076A81A77A29800CDA0F3 /* SWRevealViewController */,
 				AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */,
 				AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */,
 				AB1A94991A65173900364346 /* UIKit+AFNetworking */,
@@ -433,12 +484,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC076991A779B2C00CDA0F3 /* ARTWORK_RELEASE_1.png in Resources */,
 				ABA270C51A3AF22800FD78F9 /* logo_rh.png in Resources */,
 				ABE786C91A40DFC300E930AC /* CSCell.xib in Resources */,
+				AB089F1E1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg in Resources */,
 				AB443F1219E8610D004D1B0E /* Main.storyboard in Resources */,
 				ABE786BE1A40D0C200E930AC /* .gitkeep in Resources */,
+				ABC0769E1A779B6000CDA0F3 /* ART-TIGERZ3.png in Resources */,
+				ABC076A51A779B9000CDA0F3 /* ARTWORK_YO-ZU.png in Resources */,
+				ABC076A01A779B6F00CDA0F3 /* RH004-ARTWORK.png in Resources */,
 				ABE786C11A40D19200E930AC /* CollectionHeaderParallax.xib in Resources */,
 				ABE786BF1A40D0C200E930AC /* .gitkeep in Resources */,
+				ABC076A21A779B7C00CDA0F3 /* RH005-ARTWORK.png in Resources */,
+				ABC076971A77989A00CDA0F3 /* bg_nuit.png in Resources */,
+				ABC0769C1A779B5200CDA0F3 /* RH002-ARTWORK.jpg in Resources */,
+				ABC076951A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png in Resources */,
+				ABC076A71A779C0600CDA0F3 /* ARTWORK-Lee-x-Matthews.png in Resources */,
 				AB443F1719E8610D004D1B0E /* LaunchScreen.xib in Resources */,
 				AB443F1419E8610D004D1B0E /* Images.xcassets in Resources */,
 			);
@@ -481,6 +542,7 @@
 				AB1A94B01A65173900364346 /* UIProgressView+AFNetworking.m in Sources */,
 				AB443F0C19E8610D004D1B0E /* AppDelegate.m in Sources */,
 				AB1A94AD1A65173900364346 /* UIAlertView+AFNetworking.m in Sources */,
+				ABC076AB1A77A29800CDA0F3 /* SWRevealViewController.m in Sources */,
 				ABE786BD1A40D0C200E930AC /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				AB1A94971A65172500364346 /* AFURLResponseSerialization.m in Sources */,
 				AB1A94AE1A65173900364346 /* UIButton+AFNetworking.m in Sources */,

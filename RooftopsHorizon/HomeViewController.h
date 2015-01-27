@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *btn_rh;
 @property (weak, nonatomic) IBOutlet UIButton *btn_music;
+@property (weak, nonatomic) IBOutlet UIImageView *bg_home;
 
 - (IBAction)OnButtonClick:(id)sender;
 
