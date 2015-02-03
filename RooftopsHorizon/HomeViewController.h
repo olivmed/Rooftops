@@ -2,18 +2,17 @@
 //  HomeViewController.h
 //  RooftopsHorizon
 //
-//  Created by Olivier Medina on 16/12/2014.
-//  Copyright (c) 2014 Olivier Medina. All rights reserved.
+//  Created by Olivier Medina on 03/02/2015.
+//  Copyright (c) 2015 Olivier Medina. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "UIScrollView+APParallaxHeader.h"
+#import "SWRevealViewController.h"
 
-@interface HomeViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UIButton *btn_rh;
-@property (weak, nonatomic) IBOutlet UIButton *btn_music;
-@property (weak, nonatomic) IBOutlet UIImageView *bg_home;
-
-- (IBAction)OnButtonClick:(id)sender;
+@interface HomeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, APParallaxViewDelegate>
+@property (weak, nonatomic) IBOutlet UIView *homeHeaderView;
+@property (weak, nonatomic) IBOutlet UITableView *homeTableView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *navButton;
 
 @end

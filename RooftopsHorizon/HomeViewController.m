@@ -2,62 +2,75 @@
 //  HomeViewController.m
 //  RooftopsHorizon
 //
-//  Created by Olivier Medina on 16/12/2014.
-//  Copyright (c) 2014 Olivier Medina. All rights reserved.
+//  Created by Olivier Medina on 03/02/2015.
+//  Copyright (c) 2015 Olivier Medina. All rights reserved.
 //
 
 #import "HomeViewController.h"
-#import "SWRevealViewController.h"
 
+@interface HomeViewController ()
+
+@end
 
 @implementation HomeViewController
 
--(void)viewDidLoad{
-    // Set vertical effect
-    UIInterpolatingMotionEffect *verticalMotionEffect =
-    [[UIInterpolatingMotionEffect alloc]
-     initWithKeyPath:@"center.y"
-     type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
-    verticalMotionEffect.minimumRelativeValue = @(-10);
-    verticalMotionEffect.maximumRelativeValue = @(10);
-    
-    // Set horizontal effect
-    UIInterpolatingMotionEffect *horizontalMotionEffect =
-    [[UIInterpolatingMotionEffect alloc]
-     initWithKeyPath:@"center.x"
-     type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
-    horizontalMotionEffect.minimumRelativeValue = @(-10);
-    horizontalMotionEffect.maximumRelativeValue = @(10);
-    
-    // Create group to combine both
-    UIMotionEffectGroup *group = [UIMotionEffectGroup new];
-    group.motionEffects = @[horizontalMotionEffect, verticalMotionEffect];
-    
-    // Add both effects to your view
-    [_bg_home addMotionEffect:group];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
     
 
+    [_homeTableView addParallaxWithView:_homeHeaderView andHeight:_homeHeaderView.frame.size.height];
+    [_homeTableView.parallaxView setDelegate:self];
+     
     self.title = @"Rooftops Horizon";
-    
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                             forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationController.navigationBar.translucent = YES;
-    
-    //    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:10 green:10 blue:10 alpha:0.5];
-//    [self.navigationController.navigationBar
-//     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-//    
-    
     SWRevealViewController *revealViewController = self.revealViewController;
-//    if ( revealViewController )
-//    {
-//        
-//        [self.sidebarButton setTarget: self.revealViewController];
-//        [self.sidebarButton setAction: @selector( revealToggle: )];
-//        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-//    }
+
+    if ( revealViewController )
+    {
+        [_navButton setTarget: self.revealViewController];
+        [_navButton setAction: @selector( revealToggle: )];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
 }
-- (IBAction)OnButtonClick:(id)sender {
+
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 7;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellId = @"homeCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
+    
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"DATHAN // WAVES #%ld#", (long)indexPath.row];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Last release from the well known Dathan, enjoy! #%ld#", (long)indexPath.row];
+    cell.detailTextLabel.textColor = [UIColor grayColor];
+    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld.png", (long)indexPath.row]];
+    return cell;
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
 @end
