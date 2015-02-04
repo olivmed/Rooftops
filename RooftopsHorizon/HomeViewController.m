@@ -8,19 +8,30 @@
 
 #import "HomeViewController.h"
 
+
 @interface HomeViewController ()
 
 @end
 
 @implementation HomeViewController
+static NSString *cellId = @"homeCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Locate your layout
+    CSStickyHeaderFlowLayout *layout = (id)self.collectionViewLayout;
+    if ([layout isKindOfClass:[CSStickyHeaderFlowLayout class]]) {
+        layout.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 240);
+    }
+    
+    // Locate the nib and register it to your collection view
+    UINib *headerNib = [UINib nibWithNibName:@"HomeHeader" bundle:nil];
+    [self.collectionView registerNib:headerNib
+          forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader
+                 withReuseIdentifier:@"header"];
 
-    [_homeTableView addParallaxWithView:_homeHeaderView andHeight:_homeHeaderView.frame.size.height];
-    [_homeTableView.parallaxView setDelegate:self];
      
     self.title = @"Rooftops Horizon";
     SWRevealViewController *revealViewController = self.revealViewController;
@@ -40,28 +51,52 @@
     // Dispose of any resources that can be recreated.
 }
 
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;
+
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return 7;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellId = @"homeCell";
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
+    HomeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
+    CGRect rect = cell.frame;
+    rect.size.width = self.view.frame.size.width;
+    rect.origin.x = 0;
+    [cell setFrame:rect];
     
+    cell.lb_title.text = [NSString stringWithFormat:@"DATHAN // WAVES #%ld#", (long)indexPath.row];
+    cell.lb_subtitle.text = [NSString stringWithFormat:@"Last release from the well known Dathan, enjoy! #%ld#", (long)indexPath.row];
+    cell.lb_subtitle.textColor = [UIColor grayColor];
+    cell.iv_cell.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld.png", (long)indexPath.row]];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"DATHAN // WAVES #%ld#", (long)indexPath.row];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Last release from the well known Dathan, enjoy! #%ld#", (long)indexPath.row];
-    cell.detailTextLabel.textColor = [UIColor grayColor];
-    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld.png", (long)indexPath.row]];
     return cell;
 }
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    
+    // Check the kind if it's CSStickyHeaderParallaxHeader
+    if ([kind isEqualToString:CSStickyHeaderParallaxHeader]) {
+        
+        UICollectionReusableView *cell = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                                            withReuseIdentifier:@"header"
+                                                                                   forIndexPath:indexPath];
+        
+        return cell;
+        
+    } else if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        // Your code to configure your section header...
+    } else {
+        // other custom supplementary views
+    }
+    return nil;
+}
+
 
 /*
 #pragma mark - Navigation

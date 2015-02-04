@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIScrollView+APParallaxHeader.h"
 #import "SWRevealViewController.h"
+#import "HomeCell.h"
+#import "CSStickyHeaderFlowLayout.h"
 
-@interface HomeViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, APParallaxViewDelegate>
-@property (weak, nonatomic) IBOutlet UIView *homeHeaderView;
+@interface HomeViewController : UICollectionViewController
 @property (weak, nonatomic) IBOutlet UITableView *homeTableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *navButton;
 

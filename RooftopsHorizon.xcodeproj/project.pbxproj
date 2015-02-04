@@ -44,7 +44,6 @@
 		ABC076951A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076941A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png */; };
 		ABC076971A77989A00CDA0F3 /* bg_nuit.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076961A77989A00CDA0F3 /* bg_nuit.png */; };
 		ABC076991A779B2C00CDA0F3 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076981A779B2C00CDA0F3 /* 0.png */; };
-		ABC0769C1A779B5200CDA0F3 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABC0769B1A779B5200CDA0F3 /* 6.jpg */; };
 		ABC0769E1A779B6000CDA0F3 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC0769D1A779B6000CDA0F3 /* 5.png */; };
 		ABC076A01A779B6F00CDA0F3 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC0769F1A779B6F00CDA0F3 /* 4.png */; };
 		ABC076A21A779B7C00CDA0F3 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076A11A779B7C00CDA0F3 /* 3.png */; };
@@ -53,6 +52,14 @@
 		ABC076AB1A77A29800CDA0F3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC076AA1A77A29800CDA0F3 /* SWRevealViewController.m */; };
 		ABC2E7C81A80C4B9005ACF1B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2E7C71A80C4B9005ACF1B /* HomeViewController.m */; };
 		ABCCFBAB1A80DF6D00CA29C6 /* UIScrollView+APParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCCFBAA1A80DF6D00CA29C6 /* UIScrollView+APParallaxHeader.m */; };
+		ABE026041A82114000E256E7 /* HomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE026031A82114000E256E7 /* HomeHeader.xib */; };
+		ABE0A5361A822304004752BC /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A52F1A822304004752BC /* CSStickyHeaderFlowLayout.m */; };
+		ABE0A5371A822304004752BC /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A5311A822304004752BC /* CSStickyHeaderFlowLayoutAttributes.m */; };
+		ABE0A5381A822304004752BC /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = ABE0A5331A822304004752BC /* .gitkeep */; };
+		ABE0A5391A822304004752BC /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = ABE0A5351A822304004752BC /* .gitkeep */; };
+		ABE0A53D1A8226A7004752BC /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A53C1A8226A7004752BC /* HomeCell.m */; };
+		ABE0A53F1A82300B004752BC /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE0A53E1A82300B004752BC /* 7.png */; };
+		ABE0A5411A82307D004752BC /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE0A5401A82307D004752BC /* 6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,7 +138,6 @@
 		ABC076941A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LOGO_ROOFTOPS-HORIZON-Blanc.png"; sourceTree = "<group>"; };
 		ABC076961A77989A00CDA0F3 /* bg_nuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_nuit.png; sourceTree = "<group>"; };
 		ABC076981A779B2C00CDA0F3 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
-		ABC0769B1A779B5200CDA0F3 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		ABC0769D1A779B6000CDA0F3 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		ABC0769F1A779B6F00CDA0F3 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		ABC076A11A779B7C00CDA0F3 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -145,6 +151,17 @@
 		ABCCF2691A5E8754002AA78B /* RooftopsHorizon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RooftopsHorizon-Prefix.pch"; sourceTree = "<group>"; };
 		ABCCFBA91A80DF6D00CA29C6 /* UIScrollView+APParallaxHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+APParallaxHeader.h"; sourceTree = "<group>"; };
 		ABCCFBAA1A80DF6D00CA29C6 /* UIScrollView+APParallaxHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+APParallaxHeader.m"; sourceTree = "<group>"; };
+		ABE026031A82114000E256E7 /* HomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeader.xib; sourceTree = "<group>"; };
+		ABE0A52E1A822304004752BC /* CSStickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayout.h; sourceTree = "<group>"; };
+		ABE0A52F1A822304004752BC /* CSStickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayout.m; sourceTree = "<group>"; };
+		ABE0A5301A822304004752BC /* CSStickyHeaderFlowLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayoutAttributes.h; sourceTree = "<group>"; };
+		ABE0A5311A822304004752BC /* CSStickyHeaderFlowLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayoutAttributes.m; sourceTree = "<group>"; };
+		ABE0A5331A822304004752BC /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		ABE0A5351A822304004752BC /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		ABE0A53B1A8226A7004752BC /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		ABE0A53C1A8226A7004752BC /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		ABE0A53E1A82300B004752BC /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		ABE0A5401A82307D004752BC /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +248,8 @@
 		AB1E95661A40C60C0064E087 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				ABE0A53A1A822672004752BC /* cells */,
+				ABE026021A82111900E256E7 /* view */,
 				ABC2E7C61A80C4B9005ACF1B /* HomeViewController.h */,
 				ABC2E7C71A80C4B9005ACF1B /* HomeViewController.m */,
 				ABBF2D821A81796D00912A41 /* DrawerViewController.h */,
@@ -320,11 +339,12 @@
 			isa = PBXGroup;
 			children = (
 				ABC076A61A779C0600CDA0F3 /* 1.png */,
+				ABE0A53E1A82300B004752BC /* 7.png */,
 				ABC076A41A779B9000CDA0F3 /* 2.png */,
+				ABE0A5401A82307D004752BC /* 6.png */,
 				ABC076A11A779B7C00CDA0F3 /* 3.png */,
 				ABC0769F1A779B6F00CDA0F3 /* 4.png */,
 				ABC0769D1A779B6000CDA0F3 /* 5.png */,
-				ABC0769B1A779B5200CDA0F3 /* 6.jpg */,
 				ABC076981A779B2C00CDA0F3 /* 0.png */,
 			);
 			name = artwork;
@@ -359,9 +379,57 @@
 			path = APParallaxHeader;
 			sourceTree = "<group>";
 		};
+		ABE026021A82111900E256E7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				ABE026031A82114000E256E7 /* HomeHeader.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		ABE0A52D1A822304004752BC /* CSStickyHeaderFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				ABE0A52E1A822304004752BC /* CSStickyHeaderFlowLayout.h */,
+				ABE0A52F1A822304004752BC /* CSStickyHeaderFlowLayout.m */,
+				ABE0A5301A822304004752BC /* CSStickyHeaderFlowLayoutAttributes.h */,
+				ABE0A5311A822304004752BC /* CSStickyHeaderFlowLayoutAttributes.m */,
+				ABE0A5321A822304004752BC /* ios */,
+				ABE0A5341A822304004752BC /* osx */,
+			);
+			name = CSStickyHeaderFlowLayout;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ABE0A5321A822304004752BC /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				ABE0A5331A822304004752BC /* .gitkeep */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		ABE0A5341A822304004752BC /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				ABE0A5351A822304004752BC /* .gitkeep */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		ABE0A53A1A822672004752BC /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				ABE0A53B1A8226A7004752BC /* HomeCell.h */,
+				ABE0A53C1A8226A7004752BC /* HomeCell.m */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
 		ABE786B21A40D04A00E930AC /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				ABE0A52D1A822304004752BC /* CSStickyHeaderFlowLayout */,
 				ABCCFBA81A80DF6D00CA29C6 /* APParallaxHeader */,
 				ABC076A81A77A29800CDA0F3 /* SWRevealViewController */,
 				AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */,
@@ -454,19 +522,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE0A5411A82307D004752BC /* 6.png in Resources */,
 				ABC076991A779B2C00CDA0F3 /* 0.png in Resources */,
+				ABE0A53F1A82300B004752BC /* 7.png in Resources */,
 				ABA270C51A3AF22800FD78F9 /* logo_rh.png in Resources */,
 				AB089F1E1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg in Resources */,
 				AB443F1219E8610D004D1B0E /* Main.storyboard in Resources */,
+				ABE0A5381A822304004752BC /* .gitkeep in Resources */,
 				ABC0769E1A779B6000CDA0F3 /* 5.png in Resources */,
 				ABC076A51A779B9000CDA0F3 /* 2.png in Resources */,
+				ABE0A5391A822304004752BC /* .gitkeep in Resources */,
 				ABC076A01A779B6F00CDA0F3 /* 4.png in Resources */,
 				ABC076A21A779B7C00CDA0F3 /* 3.png in Resources */,
 				ABC076971A77989A00CDA0F3 /* bg_nuit.png in Resources */,
-				ABC0769C1A779B5200CDA0F3 /* 6.jpg in Resources */,
 				ABC076951A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png in Resources */,
 				ABBF2D7D1A81730800912A41 /* logo_rh_min.png in Resources */,
 				ABBF2D801A81782600912A41 /* logo_rh_min@2x.png in Resources */,
+				ABE026041A82114000E256E7 /* HomeHeader.xib in Resources */,
 				ABC076A71A779C0600CDA0F3 /* 1.png in Resources */,
 				ABBF2D811A81782600912A41 /* logo_rh_min@3x.png in Resources */,
 				AB443F1719E8610D004D1B0E /* LaunchScreen.xib in Resources */,
@@ -506,9 +578,11 @@
 			files = (
 				AB1A94B11A65173900364346 /* UIRefreshControl+AFNetworking.m in Sources */,
 				AB1A94B51A6518B500364346 /* DataManager.m in Sources */,
+				ABE0A5371A822304004752BC /* CSStickyHeaderFlowLayoutAttributes.m in Sources */,
 				ABCCFBAB1A80DF6D00CA29C6 /* UIScrollView+APParallaxHeader.m in Sources */,
 				AB1A94951A65172500364346 /* AFURLConnectionOperation.m in Sources */,
 				AB1A94B01A65173900364346 /* UIProgressView+AFNetworking.m in Sources */,
+				ABE0A53D1A8226A7004752BC /* HomeCell.m in Sources */,
 				AB443F0C19E8610D004D1B0E /* AppDelegate.m in Sources */,
 				AB1A94AD1A65173900364346 /* UIAlertView+AFNetworking.m in Sources */,
 				ABC076AB1A77A29800CDA0F3 /* SWRevealViewController.m in Sources */,
@@ -516,6 +590,7 @@
 				AB1A94AE1A65173900364346 /* UIButton+AFNetworking.m in Sources */,
 				AB443F0919E8610D004D1B0E /* main.m in Sources */,
 				AB1A94AC1A65173900364346 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				ABE0A5361A822304004752BC /* CSStickyHeaderFlowLayout.m in Sources */,
 				AB1A94961A65172500364346 /* AFURLRequestSerialization.m in Sources */,
 				AB1A94AB1A65173900364346 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				AB1A94941A65172500364346 /* AFSecurityPolicy.m in Sources */,
