@@ -12,7 +12,7 @@
 #import "CSStickyHeaderFlowLayout.h"
 
 @interface HomeViewController : UICollectionViewController
-@property (weak, nonatomic) IBOutlet UITableView *homeTableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *navButton;
+@property (strong, nonatomic) IBOutlet UICollectionView *homeCollectionView;
 
 @end

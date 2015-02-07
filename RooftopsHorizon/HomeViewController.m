@@ -23,9 +23,19 @@ static NSString *cellId = @"homeCell";
     // Locate your layout
     CSStickyHeaderFlowLayout *layout = (id)self.collectionViewLayout;
     if ([layout isKindOfClass:[CSStickyHeaderFlowLayout class]]) {
-        layout.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 240);
+    
+        UIDevice* thisDevice = [UIDevice currentDevice];
+        if(thisDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad)
+        {
+            layout.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 480);
+        }
+        else
+        {
+            layout.parallaxHeaderReferenceSize = CGSizeMake(self.view.frame.size.width, 240);
+        }
     }
     
+    [_homeCollectionView setContentInset:UIEdgeInsetsMake(0, 0, 45, 0)];
     // Locate the nib and register it to your collection view
     UINib *headerNib = [UINib nibWithNibName:@"HomeHeader" bundle:nil];
     [self.collectionView registerNib:headerNib
@@ -65,10 +75,7 @@ static NSString *cellId = @"homeCell";
 {
     
     HomeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
-    CGRect rect = cell.frame;
-    rect.size.width = self.view.frame.size.width;
-    rect.origin.x = 0;
-    [cell setFrame:rect];
+
     
     cell.lb_title.text = [NSString stringWithFormat:@"DATHAN // WAVES #%ld#", (long)indexPath.row];
     cell.lb_subtitle.text = [NSString stringWithFormat:@"Last release from the well known Dathan, enjoy! #%ld#", (long)indexPath.row];
@@ -97,7 +104,9 @@ static NSString *cellId = @"homeCell";
     return nil;
 }
 
-
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return CGSizeMake(self.view.frame.size.width, 100);
+}
 /*
 #pragma mark - Navigation
 
