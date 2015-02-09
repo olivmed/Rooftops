@@ -9,13 +9,21 @@
 #import "AppDelegate.h"
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
-
+#import "SCUI.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+
+
++ (void) initialize
+{
+    [SCSoundCloud setClientID:@"1c25674ba2a71344e4450de2243f351b"
+                       secret:@"2e3f7bd5370a0574bbd7ed4831009170"
+                  redirectURL:[NSURL URLWithString:@"http://rh.oliviermedina.fr/apis/getUser/0"]];
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

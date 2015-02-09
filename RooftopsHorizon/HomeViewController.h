@@ -10,6 +10,8 @@
 #import "SWRevealViewController.h"
 #import "HomeCell.h"
 #import "CSStickyHeaderFlowLayout.h"
+#import "SCUI.h"
+#import <SingleTrackTableViewController.h>
 
 @interface HomeViewController : UICollectionViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *navButton;

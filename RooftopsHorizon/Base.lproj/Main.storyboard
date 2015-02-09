@@ -104,6 +104,12 @@
                         <barButtonItem key="leftBarButtonItem" image="logo_rh_min.png" id="Vqu-de-eUK">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="SOUNDCLOUD.png" id="WPo-Jd-SFk">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="login:" destination="XBQ-4y-rTm" id="3Nd-Ve-02y"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="homeCollectionView" destination="wqn-h9-1F7" id="SX5-co-EhD"/>
@@ -160,6 +166,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SOUNDCLOUD.png" width="18" height="18"/>
         <image name="logo_rh_min.png" width="23" height="23"/>
     </resources>
 </document>

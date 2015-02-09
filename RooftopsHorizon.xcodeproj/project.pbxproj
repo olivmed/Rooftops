@@ -49,6 +49,9 @@
 		AB5261311A763A4C00884C82 /* WSGetArtists.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5261301A763A4C00884C82 /* WSGetArtists.m */; };
 		AB79BB9D1A6ADDCD00C607B7 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */; };
 		AB79BB9E1A6ADDCD00C607B7 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */; };
+		AB9C627E1A88AA11002E0609 /* SOUNDCLOUD.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9C627D1A88AA11002E0609 /* SOUNDCLOUD.png */; };
+		AB9C62881A88B12B002E0609 /* SingleTrackTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9C62861A88B12B002E0609 /* SingleTrackTableViewController.m */; };
+		AB9C62891A88B12B002E0609 /* SingleTrackTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9C62871A88B12B002E0609 /* SingleTrackTableViewController.xib */; };
 		ABA270C51A3AF22800FD78F9 /* logo_rh.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA270C41A3AF22800FD78F9 /* logo_rh.png */; };
 		ABAC54131A7638D0004D6A1C /* WSRooftopsHorizon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAC54121A7638D0004D6A1C /* WSRooftopsHorizon.m */; };
 		ABBF2D7D1A81730800912A41 /* logo_rh_min.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBF2D7C1A81730800912A41 /* logo_rh_min.png */; };
@@ -260,6 +263,10 @@
 		AB5261301A763A4C00884C82 /* WSGetArtists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSGetArtists.m; sourceTree = "<group>"; };
 		AB79BB9B1A6ADDCD00C607B7 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../Crashlytics.framework; sourceTree = "<group>"; };
 		AB79BB9C1A6ADDCD00C607B7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
+		AB9C627D1A88AA11002E0609 /* SOUNDCLOUD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SOUNDCLOUD.png; sourceTree = "<group>"; };
+		AB9C62851A88B12B002E0609 /* SingleTrackTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTrackTableViewController.h; sourceTree = "<group>"; };
+		AB9C62861A88B12B002E0609 /* SingleTrackTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTrackTableViewController.m; sourceTree = "<group>"; };
+		AB9C62871A88B12B002E0609 /* SingleTrackTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleTrackTableViewController.xib; sourceTree = "<group>"; };
 		ABA270C41A3AF22800FD78F9 /* logo_rh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_rh.png; sourceTree = "<group>"; };
 		ABAC54111A7638D0004D6A1C /* WSRooftopsHorizon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSRooftopsHorizon.h; sourceTree = "<group>"; };
 		ABAC54121A7638D0004D6A1C /* WSRooftopsHorizon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSRooftopsHorizon.m; sourceTree = "<group>"; };
@@ -391,12 +398,9 @@
 		AB1E95661A40C60C0064E087 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				AB9C62841A88B059002E0609 /* controllers */,
 				ABE0A53A1A822672004752BC /* cells */,
 				ABE026021A82111900E256E7 /* view */,
-				ABC2E7C61A80C4B9005ACF1B /* HomeViewController.h */,
-				ABC2E7C71A80C4B9005ACF1B /* HomeViewController.m */,
-				ABBF2D821A81796D00912A41 /* DrawerViewController.h */,
-				ABBF2D831A81796D00912A41 /* DrawerViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -529,9 +533,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AB9C62841A88B059002E0609 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ABC2E7C61A80C4B9005ACF1B /* HomeViewController.h */,
+				ABC2E7C71A80C4B9005ACF1B /* HomeViewController.m */,
+				ABBF2D821A81796D00912A41 /* DrawerViewController.h */,
+				ABBF2D831A81796D00912A41 /* DrawerViewController.m */,
+				AB9C62851A88B12B002E0609 /* SingleTrackTableViewController.h */,
+				AB9C62861A88B12B002E0609 /* SingleTrackTableViewController.m */,
+				AB9C62871A88B12B002E0609 /* SingleTrackTableViewController.xib */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 		ABA270C31A3AF1B200FD78F9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AB9C627D1A88AA11002E0609 /* SOUNDCLOUD.png */,
 				ABC0769A1A779B3200CDA0F3 /* artwork */,
 				ABC076961A77989A00CDA0F3 /* bg_nuit.png */,
 				ABC076941A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png */,
@@ -828,6 +847,7 @@
 				ABC076991A779B2C00CDA0F3 /* 0.png in Resources */,
 				ABE0A53F1A82300B004752BC /* 7.png in Resources */,
 				ABA270C51A3AF22800FD78F9 /* logo_rh.png in Resources */,
+				AB9C62891A88B12B002E0609 /* SingleTrackTableViewController.xib in Resources */,
 				AB089F1E1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg in Resources */,
 				AB443F1219E8610D004D1B0E /* Main.storyboard in Resources */,
 				ABE0A5381A822304004752BC /* .gitkeep in Resources */,
@@ -838,6 +858,7 @@
 				ABC076A21A779B7C00CDA0F3 /* 3.png in Resources */,
 				ABC076971A77989A00CDA0F3 /* bg_nuit.png in Resources */,
 				ABC076951A77910A00CDA0F3 /* LOGO_ROOFTOPS-HORIZON-Blanc.png in Resources */,
+				AB9C627E1A88AA11002E0609 /* SOUNDCLOUD.png in Resources */,
 				ABBF2D7D1A81730800912A41 /* logo_rh_min.png in Resources */,
 				ABBF2D801A81782600912A41 /* logo_rh_min@2x.png in Resources */,
 				ABE026041A82114000E256E7 /* HomeHeader.xib in Resources */,
@@ -898,6 +919,7 @@
 				AB1A94941A65172500364346 /* AFSecurityPolicy.m in Sources */,
 				ABBF2D841A81796D00912A41 /* DrawerViewController.m in Sources */,
 				AB1A94901A65172500364346 /* AFHTTPRequestOperation.m in Sources */,
+				AB9C62881A88B12B002E0609 /* SingleTrackTableViewController.m in Sources */,
 				AB1A94981A65172500364346 /* AFURLSessionManager.m in Sources */,
 				AB1A94921A65172500364346 /* AFHTTPSessionManager.m in Sources */,
 				AB1A94B21A65173900364346 /* UIWebView+AFNetworking.m in Sources */,
