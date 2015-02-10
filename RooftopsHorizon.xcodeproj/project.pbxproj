@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB089F1E1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB089F1D1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg */; };
+		AB0C6C6E1A89504C0080167E /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0C6C6D1A89504C0080167E /* GoogleCast.framework */; };
 		AB1A94901A65172500364346 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1A947E1A65172500364346 /* AFHTTPRequestOperation.m */; };
 		AB1A94911A65172500364346 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1A94801A65172500364346 /* AFHTTPRequestOperationManager.m */; };
 		AB1A94921A65172500364346 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1A94821A65172500364346 /* AFHTTPSessionManager.m */; };
@@ -68,6 +69,7 @@
 		ABC076A71A779C0600CDA0F3 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABC076A61A779C0600CDA0F3 /* 1.png */; };
 		ABC076AB1A77A29800CDA0F3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC076AA1A77A29800CDA0F3 /* SWRevealViewController.m */; };
 		ABC2E7C81A80C4B9005ACF1B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC2E7C71A80C4B9005ACF1B /* HomeViewController.m */; };
+		ABCF859D1A896206009A9D4B /* CCastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCF859C1A896206009A9D4B /* CCastViewController.m */; };
 		ABE026041A82114000E256E7 /* HomeHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE026031A82114000E256E7 /* HomeHeader.xib */; };
 		ABE0A5361A822304004752BC /* CSStickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A52F1A822304004752BC /* CSStickyHeaderFlowLayout.m */; };
 		ABE0A5371A822304004752BC /* CSStickyHeaderFlowLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A5311A822304004752BC /* CSStickyHeaderFlowLayoutAttributes.m */; };
@@ -195,6 +197,7 @@
 
 /* Begin PBXFileReference section */
 		AB089F1D1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg"; sourceTree = "<group>"; };
+		AB0C6C6D1A89504C0080167E /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../../Downloads/GoogleCastSDK-2.5.2-Release/GoogleCast.framework"; sourceTree = "<group>"; };
 		AB1A947D1A65172500364346 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		AB1A947E1A65172500364346 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		AB1A947F1A65172500364346 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -289,6 +292,8 @@
 		ABC2E7C71A80C4B9005ACF1B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		ABCCF2681A5E864C002AA78B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		ABCCF2691A5E8754002AA78B /* RooftopsHorizon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RooftopsHorizon-Prefix.pch"; sourceTree = "<group>"; };
+		ABCF859B1A896206009A9D4B /* CCastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCastViewController.h; sourceTree = "<group>"; };
+		ABCF859C1A896206009A9D4B /* CCastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCastViewController.m; sourceTree = "<group>"; };
 		ABE026031A82114000E256E7 /* HomeHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeader.xib; sourceTree = "<group>"; };
 		ABE0A52E1A822304004752BC /* CSStickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSStickyHeaderFlowLayout.h; sourceTree = "<group>"; };
 		ABE0A52F1A822304004752BC /* CSStickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSStickyHeaderFlowLayout.m; sourceTree = "<group>"; };
@@ -307,6 +312,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0C6C6E1A89504C0080167E /* GoogleCast.framework in Frameworks */,
 				AB41BFBD1A837D8A002C4E4E /* AddressBook.framework in Frameworks */,
 				AB41BFBE1A837D8A002C4E4E /* AddressBookUI.framework in Frameworks */,
 				AB41BFBF1A837D8A002C4E4E /* CoreGraphics.framework in Frameworks */,
@@ -453,6 +459,7 @@
 		AB41BFC41A837E3A002C4E4E /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				AB0C6C6D1A89504C0080167E /* GoogleCast.framework */,
 				AB41BFC51A837E80002C4E4E /* SoundCloud.bundle */,
 				AB41BFB61A837D8A002C4E4E /* AddressBook.framework */,
 				AB41BFB71A837D8A002C4E4E /* AddressBookUI.framework */,
@@ -543,6 +550,8 @@
 				AB9C62851A88B12B002E0609 /* SingleTrackTableViewController.h */,
 				AB9C62861A88B12B002E0609 /* SingleTrackTableViewController.m */,
 				AB9C62871A88B12B002E0609 /* SingleTrackTableViewController.xib */,
+				ABCF859B1A896206009A9D4B /* CCastViewController.h */,
+				ABCF859C1A896206009A9D4B /* CCastViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -918,6 +927,7 @@
 				AB1A94AB1A65173900364346 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				AB1A94941A65172500364346 /* AFSecurityPolicy.m in Sources */,
 				ABBF2D841A81796D00912A41 /* DrawerViewController.m in Sources */,
+				ABCF859D1A896206009A9D4B /* CCastViewController.m in Sources */,
 				AB1A94901A65172500364346 /* AFHTTPRequestOperation.m in Sources */,
 				AB9C62881A88B12B002E0609 /* SingleTrackTableViewController.m in Sources */,
 				AB1A94981A65172500364346 /* AFURLSessionManager.m in Sources */,
@@ -1080,6 +1090,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/oliviermedina/Downloads/GoogleCastSDK-2.5.2-Release",
 				);
 				GCC_PREFIX_HEADER = "RooftopsHorizon/RooftopsHorizon-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1108,6 +1119,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/oliviermedina/Downloads/GoogleCastSDK-2.5.2-Release",
 				);
 				GCC_PREFIX_HEADER = "RooftopsHorizon/RooftopsHorizon-Prefix.pch";
 				HEADER_SEARCH_PATHS = (

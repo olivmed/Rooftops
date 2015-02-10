@@ -8,7 +8,7 @@
 
 #import "HomeViewController.h"
 
-
+#import "CCastViewController.h"
 @interface HomeViewController ()
 
 @end
@@ -109,43 +109,48 @@ static NSString *cellId = @"homeCell";
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    SCAccount *account = [SCSoundCloud account];
-    if (account == nil) {
-        UIAlertView *alert = [[UIAlertView alloc]
-                              initWithTitle:@"Not Logged In"
-                              message:@"You must login first"
-                              delegate:nil
-                              cancelButtonTitle:@"OK"
-                              otherButtonTitles:nil];
-        [alert show];
-        return;
-    }
-    
-    SCRequestResponseHandler handler;
-    handler = ^(NSURLResponse *response, NSData *data, NSError *error) {
-        NSError *jsonError = nil;
-        NSJSONSerialization *jsonResponse = [NSJSONSerialization
-                                             JSONObjectWithData:data
-                                             options:0
-                                             error:&jsonError];
-        if (!jsonError && [jsonResponse isKindOfClass:[NSArray class]]) {
-            SingleTrackTableViewController *trackListVC;
-            trackListVC = [[SingleTrackTableViewController alloc]
-                           initWithNibName:@"SingleTrackTableViewController"
-                           bundle:nil];
-            trackListVC.tracks = (NSArray *)jsonResponse;
-            [self presentViewController:trackListVC
-                               animated:YES completion:nil];
-        }
-    };
-    
-    NSString *resourceURL = @"https://api.soundcloud.com/me/favorites.json";
-    [SCRequest performMethod:SCRequestMethodGET
-                  onResource:[NSURL URLWithString:resourceURL]
-             usingParameters:nil
-                 withAccount:account
-      sendingProgressHandler:nil
-             responseHandler:handler];
+//    SCAccount *account = [SCSoundCloud account];
+//    if (account == nil) {
+//        UIAlertView *alert = [[UIAlertView alloc]
+//                              initWithTitle:@"Not Logged In"
+//                              message:@"You must login first"
+//                              delegate:nil
+//                              cancelButtonTitle:@"OK"
+//                              otherButtonTitles:nil];
+//        [alert show];
+//        return;
+//    }
+//    
+//    SCRequestResponseHandler handler;
+//    handler = ^(NSURLResponse *response, NSData *data, NSError *error) {
+//        NSError *jsonError = nil;
+//        NSJSONSerialization *jsonResponse = [NSJSONSerialization
+//                                             JSONObjectWithData:data
+//                                             options:0
+//                                             error:&jsonError];
+//        if (!jsonError && [jsonResponse isKindOfClass:[NSArray class]]) {
+//            SingleTrackTableViewController *trackListVC;
+//            trackListVC = [[SingleTrackTableViewController alloc]
+//                           initWithNibName:@"SingleTrackTableViewController"
+//                           bundle:nil];
+//            trackListVC.tracks = (NSArray *)jsonResponse;
+//            [self presentViewController:trackListVC
+//                               animated:YES completion:nil];
+//        }
+//    };
+//    
+//    NSString *resourceURL = @"https://api.soundcloud.com/me/favorites.json";
+//    [SCRequest performMethod:SCRequestMethodGET
+//                  onResource:[NSURL URLWithString:resourceURL]
+//             usingParameters:nil
+//                 withAccount:account
+//      sendingProgressHandler:nil
+//             responseHandler:handler];
+    [self performSegueWithIdentifier:@"cast" sender:self];
+
+//    CCastViewController* cCast = [[CCastViewController alloc] init];
+//    [self presentViewController:cCast animated:YES completion:nil];
+//
 }
 /*
 #pragma mark - Navigation

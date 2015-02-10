@@ -11,6 +11,7 @@
 @implementation HomeHeader
 
 - (IBAction)homeHeaderClicked:(id)sender {
-    NSLog(@"HomeHeaderClicked");
+    
+    
 }
 @end

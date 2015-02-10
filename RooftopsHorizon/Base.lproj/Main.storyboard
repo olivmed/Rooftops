@@ -114,11 +114,52 @@
                     <connections>
                         <outlet property="homeCollectionView" destination="wqn-h9-1F7" id="SX5-co-EhD"/>
                         <outlet property="navButton" destination="Vqu-de-eUK" id="Flz-Gr-qqk"/>
+                        <segue destination="845-lU-8TK" kind="custom" identifier="cast" customClass="SWRevealViewControllerSeguePushController" id="poA-c9-qF8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kxa-tM-IRy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1829" y="235"/>
+        </scene>
+        <!--Cast View Controller-->
+        <scene sceneID="Vzc-H4-ZMd">
+            <objects>
+                <viewController id="845-lU-8TK" customClass="CCastViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WU5-mt-28V"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q9a-RC-ehY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Wx-Ik-zzO">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52R-9w-wIQ">
+                                <rect key="frame" x="0.0" y="0.0" width="139" height="112"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="init cast">
+                                    <color key="titleColor" red="0.22264212210000001" green="0.27599775850000002" blue="0.77454229799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="initCCast:" destination="845-lU-8TK" eventType="touchUpInside" id="Qga-y0-jXq"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EK8-A5-zgc">
+                                <rect key="frame" x="187" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bt_cast" destination="52R-9w-wIQ" id="S4b-bz-wTH"/>
+                        <outlet property="myView" destination="EK8-A5-zgc" id="dW9-Ih-LB0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xlc-6i-fos" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2610" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cM3-T6-CRl">
