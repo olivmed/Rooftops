@@ -35,37 +35,24 @@
                         </subviews>
                         <color key="backgroundColor" red="0.2468039773" green="0.2468039773" blue="0.2468039773" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="u3J-rn-5UM" firstAttribute="leading" secondItem="vhU-DV-IKW" secondAttribute="leading" id="7Hr-ol-5Wc"/>
-                            <constraint firstItem="vhU-DV-IKW" firstAttribute="leading" secondItem="fps-is-oMZ" secondAttribute="leading" constant="20" id="Ege-82-HPB"/>
-                            <constraint firstItem="vhU-DV-IKW" firstAttribute="top" secondItem="fps-is-oMZ" secondAttribute="top" constant="10" id="c4X-RG-sKh"/>
-                            <constraint firstItem="u3J-rn-5UM" firstAttribute="top" secondItem="vhU-DV-IKW" secondAttribute="bottom" constant="3" id="ct6-u7-Jx3"/>
-                            <constraint firstAttribute="bottom" secondItem="u3J-rn-5UM" secondAttribute="bottom" constant="9" id="omq-V9-4we"/>
+                            <constraint firstItem="u3J-rn-5UM" firstAttribute="top" secondItem="vhU-DV-IKW" secondAttribute="bottom" constant="3" id="EZ2-Dg-6S6"/>
+                            <constraint firstItem="vhU-DV-IKW" firstAttribute="top" secondItem="fps-is-oMZ" secondAttribute="top" constant="10" id="JLy-SX-rV0"/>
+                            <constraint firstItem="vhU-DV-IKW" firstAttribute="leading" secondItem="fps-is-oMZ" secondAttribute="leading" constant="20" id="QmE-eY-iJb"/>
+                            <constraint firstAttribute="bottom" secondItem="u3J-rn-5UM" secondAttribute="bottom" constant="9" id="jLD-dZ-oYE"/>
+                            <constraint firstItem="vhU-DV-IKW" firstAttribute="leading" secondItem="u3J-rn-5UM" secondAttribute="leading" id="kmB-tP-hod"/>
                         </constraints>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xA0-An-MZ5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="240"/>
-                        <state key="normal">
-                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                        <connections>
-                            <action selector="homeHeaderClicked:" destination="xrM-0X-gRB" eventType="touchUpInside" id="tpL-Xp-Vej"/>
-                        </connections>
-                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="fps-is-oMZ" firstAttribute="leading" secondItem="JFg-se-f5b" secondAttribute="leading" id="21a-Ik-xB2"/>
-                <constraint firstItem="xA0-An-MZ5" firstAttribute="top" secondItem="JFg-se-f5b" secondAttribute="top" id="7UY-nS-TSf"/>
-                <constraint firstItem="JFg-se-f5b" firstAttribute="trailing" secondItem="fps-is-oMZ" secondAttribute="trailing" id="AjG-nf-4Lv"/>
-                <constraint firstItem="xA0-An-MZ5" firstAttribute="leading" secondItem="JFg-se-f5b" secondAttribute="leading" id="CiQ-23-Ff9"/>
-                <constraint firstItem="xA0-An-MZ5" firstAttribute="bottom" secondItem="fps-is-oMZ" secondAttribute="bottom" id="ClY-vd-tFu"/>
-                <constraint firstItem="JFg-se-f5b" firstAttribute="bottom" secondItem="xA0-An-MZ5" secondAttribute="bottom" id="Gat-Ap-ltf"/>
-                <constraint firstItem="xA0-An-MZ5" firstAttribute="leading" secondItem="xrM-0X-gRB" secondAttribute="leading" id="L4W-fJ-fqK"/>
-                <constraint firstAttribute="trailing" secondItem="JFg-se-f5b" secondAttribute="trailing" id="Md3-nU-VjP"/>
-                <constraint firstItem="JFg-se-f5b" firstAttribute="top" secondItem="xrM-0X-gRB" secondAttribute="top" id="UQ1-6I-Qzk"/>
-                <constraint firstAttribute="bottom" secondItem="JFg-se-f5b" secondAttribute="bottom" id="lNe-Ud-BpK"/>
-                <constraint firstItem="JFg-se-f5b" firstAttribute="trailing" secondItem="xA0-An-MZ5" secondAttribute="trailing" id="uAz-gg-4Bd"/>
+                <constraint firstItem="JFg-se-f5b" firstAttribute="bottom" secondItem="fps-is-oMZ" secondAttribute="bottom" id="8eb-Pw-cFP"/>
+                <constraint firstItem="fps-is-oMZ" firstAttribute="leading" secondItem="xrM-0X-gRB" secondAttribute="leading" id="GAw-d3-4dX"/>
+                <constraint firstItem="JFg-se-f5b" firstAttribute="top" secondItem="xrM-0X-gRB" secondAttribute="top" id="L8y-sW-gLc"/>
+                <constraint firstAttribute="trailing" secondItem="JFg-se-f5b" secondAttribute="trailing" id="hS1-xz-1FR"/>
+                <constraint firstAttribute="bottom" secondItem="JFg-se-f5b" secondAttribute="bottom" id="l65-Hb-6Pk"/>
+                <constraint firstItem="JFg-se-f5b" firstAttribute="leading" secondItem="fps-is-oMZ" secondAttribute="leading" id="mUU-kT-sov"/>
+                <constraint firstItem="fps-is-oMZ" firstAttribute="trailing" secondItem="JFg-se-f5b" secondAttribute="trailing" id="rA2-db-Csb"/>
             </constraints>
             <size key="customSize" width="600" height="240"/>
             <point key="canvasLocation" x="603" y="-477"/>

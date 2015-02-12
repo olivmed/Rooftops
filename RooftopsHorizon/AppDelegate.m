@@ -7,9 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <Fabric/Fabric.h>
-#import <Crashlytics/Crashlytics.h>
-#import "SCUI.h"
 
 @interface AppDelegate ()
 
@@ -20,15 +17,25 @@
 
 + (void) initialize
 {
-    [SCSoundCloud setClientID:@"1c25674ba2a71344e4450de2243f351b"
-                       secret:@"2e3f7bd5370a0574bbd7ed4831009170"
-                  redirectURL:[NSURL URLWithString:@"http://rh.oliviermedina.fr/apis/getUser/0"]];
+//    [SCSoundCloud setClientID:@"1c25674ba2a71344e4450de2243f351b"
+//                       secret:@"2e3f7bd5370a0574bbd7ed4831009170"
+//                  redirectURL:[NSURL URLWithString:@"http://rh.oliviermedina.fr/apis/getUser/0"]];
 }
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [Fabric with:@[CrashlyticsKit]];
+    
+    // Hook up the logger.
+    [GCKLogger sharedInstance].delegate = self;
+    
+    // Initialize the chromecast device controller.
+    self.chromecastDeviceController = [[ChromecastDeviceController alloc] init];
+    
+    // Scan for devices.
+    [self.chromecastDeviceController performScan:YES];
+    
     return YES;
 }
 
@@ -52,6 +59,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - GCKLoggerDelegate implementation
+
+-(void)logFromFunction:(const char *)function message:(NSString *)message{
+    NSLog(@"%s  %@", function, message);
 }
 
 @end

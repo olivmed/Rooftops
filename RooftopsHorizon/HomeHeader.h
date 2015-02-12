@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeHeader : UICollectionViewCell
-- (IBAction)homeHeaderClicked:(id)sender;
 
 @end

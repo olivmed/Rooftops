@@ -7,11 +7,9 @@
 //
 
 #import "HomeHeader.h"
+#import "HomeViewController.h"
 
 @implementation HomeHeader
 
-- (IBAction)homeHeaderClicked:(id)sender {
-    
-    
-}
+
 @end
