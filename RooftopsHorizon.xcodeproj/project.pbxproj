@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB02F33E1A9005A4009C77C9 /* preview11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB02F33D1A9005A4009C77C9 /* preview11.jpg */; };
 		AB089F1E1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB089F1D1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg */; };
 		AB0C6C6E1A89504C0080167E /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0C6C6D1A89504C0080167E /* GoogleCast.framework */; };
 		AB1A94901A65172500364346 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1A947E1A65172500364346 /* AFHTTPRequestOperation.m */; };
@@ -360,6 +361,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB02F33D1A9005A4009C77C9 /* preview11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview11.jpg; sourceTree = "<group>"; };
 		AB089F1D1A778EA100C96FE6 /* ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ROOFTOPS-HORIZON-WALLPAPER-3 (1).jpg"; sourceTree = "<group>"; };
 		AB0C6C6D1A89504C0080167E /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "../../../Downloads/GoogleCastSDK-2.5.2-Release/GoogleCast.framework"; sourceTree = "<group>"; };
 		AB1A947D1A65172500364346 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -518,7 +520,7 @@
 		ABF1CE7E1A8BFB8000A2CC2A /* cling@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cling@2x.png"; sourceTree = "<group>"; };
 		ABF1CE7F1A8BFB8000A2CC2A /* closed_caption_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closed_caption_white.png; sourceTree = "<group>"; };
 		ABF1CE801A8BFB8000A2CC2A /* closed_caption_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closed_caption_white@2x.png"; sourceTree = "<group>"; };
-		ABF1CE811A8BFB8000A2CC2A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ABF1CE811A8BFB8000A2CC2A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = "<group>"; };
 		ABF1CE821A8BFB8000A2CC2A /* drawer_shadow-with-edge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drawer_shadow-with-edge.png"; sourceTree = "<group>"; };
 		ABF1CE831A8BFB8000A2CC2A /* drawer_shadow-with-edge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drawer_shadow-with-edge@2x.png"; sourceTree = "<group>"; };
 		ABF1CE841A8BFB8000A2CC2A /* drawer_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drawer_shadow.png; sourceTree = "<group>"; };
@@ -943,6 +945,8 @@
 		ABA270C31A3AF1B200FD78F9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				ABF1CE811A8BFB8000A2CC2A /* Default-568h@2x.png */,
+				AB02F33D1A9005A4009C77C9 /* preview11.jpg */,
 				ABF1CE5F1A8BFB8000A2CC2A /* CCast */,
 				AB9C627D1A88AA11002E0609 /* SOUNDCLOUD.png */,
 				ABC0769A1A779B3200CDA0F3 /* artwork */,
@@ -1090,7 +1094,6 @@
 				ABF1CE7E1A8BFB8000A2CC2A /* cling@2x.png */,
 				ABF1CE7F1A8BFB8000A2CC2A /* closed_caption_white.png */,
 				ABF1CE801A8BFB8000A2CC2A /* closed_caption_white@2x.png */,
-				ABF1CE811A8BFB8000A2CC2A /* Default-568h@2x.png */,
 				ABF1CE821A8BFB8000A2CC2A /* drawer_shadow-with-edge.png */,
 				ABF1CE831A8BFB8000A2CC2A /* drawer_shadow-with-edge@2x.png */,
 				ABF1CE841A8BFB8000A2CC2A /* drawer_shadow.png */,
@@ -1472,6 +1475,7 @@
 				ABF1CF581A8BFB8000A2CC2A /* icon_volume0@2x.png in Resources */,
 				ABF1CF911A8BFB8000A2CC2A /* prev_black.png in Resources */,
 				ABC076A51A779B9000CDA0F3 /* 2.png in Resources */,
+				AB02F33E1A9005A4009C77C9 /* preview11.jpg in Resources */,
 				ABF1CF571A8BFB8000A2CC2A /* icon_volume0.png in Resources */,
 				ABF1CF511A8BFB8000A2CC2A /* icon_settings_solid_black.png in Resources */,
 				ABE0A5391A822304004752BC /* .gitkeep in Resources */,

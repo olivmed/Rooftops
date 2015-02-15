@@ -19,14 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    menu = [[NSArray alloc]initWithObjects:@"Releases",@"Artistes", @"Videos", @"Agenda", nil];
+    menu = [[NSArray alloc]initWithObjects:@"Feed",@"Releases",@"Artistes", @"Videos", @"Agenda", @"Info", nil];
     
+    //self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"preview11.jpg"]];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -51,6 +53,7 @@
     
     // Configure the cell...
     cell.textLabel.text = [menu objectAtIndex:indexPath.row];
+    cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
 }
 

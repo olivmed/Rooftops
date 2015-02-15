@@ -52,7 +52,8 @@
   [self syncChromeCastController];
 
   self.navigationItem.rightBarButtonItem = _chromecastController.chromecastBarButton;
-
+    self.navigationItem.rightBarButtonItem.tintColor = [UIColor whiteColor];
+    
   self.castingToLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Casting to %@", nil),
       _chromecastController.deviceName];
   self.mediaTitleLabel.text = self.mediaToPlay.title;

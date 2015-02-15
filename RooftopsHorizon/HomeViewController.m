@@ -33,7 +33,7 @@ static NSString *kCastSegueIdentifier = @"castMedia";
     // Store a reference to the chromecast controller.
     AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     _chromecastController = delegate.chromecastDeviceController;
-    
+
     // Show stylized application title in the titleview.
 //    self.navigationItem.titleView =
 //    [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_castvideos.png"]];
@@ -67,7 +67,7 @@ static NSString *kCastSegueIdentifier = @"castMedia";
         }
     }
     
-    [_homeCollectionView setContentInset:UIEdgeInsetsMake(0, 0, 45, 0)];
+    [_homeCollectionView setContentInset:UIEdgeInsetsMake(0, 0, 0, 0)];
     // Locate the nib and register it to your collection view
     UINib *headerNib = [UINib nibWithNibName:@"HomeHeader" bundle:nil];
     [self.collectionView registerNib:headerNib
@@ -86,10 +86,15 @@ static NSString *kCastSegueIdentifier = @"castMedia";
     }
 }
 
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 // Show cast icon. If this is the first time the cast icon is appearing, show an overlay with
 // instructions highlighting the cast icon.
 - (void) showCastIcon {
     self.navigationItem.rightBarButtonItem = _chromecastController.chromecastBarButton;
+
     [CastInstructionsViewController showIfFirstTimeOverViewController:self];
 }
 
@@ -287,62 +292,62 @@ static NSString *kCastSegueIdentifier = @"castMedia";
 //             responseHandler:handler];
 //}
 //
-//
-//#pragma mark - ChromecastControllerDelegate
-//
-///**
-// * Called when chromecast devices are discoverd on the network.
-// */
-//- (void)didDiscoverDeviceOnNetwork {
-//    // Add the chromecast icon if not present.
-//    [self showCastIcon];
-//}
-//
-///**
-// * Called when connection to the device was established.
-// *
-// * @param device The device to which the connection was established.
-// */
-//- (void)didConnectToDevice:(GCKDevice *)device {
-//    [_chromecastController updateToolbarForViewController:self];
-//}
-//
-///**
-// * Called when connection to the device was closed.
-// */
-//- (void)didDisconnect {
-//    [_chromecastController updateToolbarForViewController:self];
-//}
-//
-///**
-// * Called when the playback state of media on the device changes.
-// */
-//- (void)didReceiveMediaStateChange {
-//    [_chromecastController updateToolbarForViewController:self];
-//}
-//
-///**
-// * Called to display the modal device view controller from the cast icon.
-// */
-//- (void)shouldDisplayModalDeviceController {
-//    [self performSegueWithIdentifier:@"listDevices" sender:self];
-//}
-//
-///**
-// * Called to display the remote media playback view controller.
-// */
-//- (void)shouldPresentPlaybackController {
-//    // Select the item being played in the table, so prepareForSegue can find the
-//    // associated Media object.
-//    NSString *title =
-//    [_chromecastController.mediaInformation.metadata stringForKey:kGCKMetadataKeyTitle];
-//    int index = [self.mediaList indexOfMediaByTitle:title];
-//    if (index >= 0) {
-//        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-//        [self.homeCollectionView selectItemAtIndexPath:indexPath animated:YES scrollPosition:UICollectionViewScrollPositionNone];
-//        [self performSegueWithIdentifier:@"castMedia" sender:self];
-//        
-//    }
-//}
+
+#pragma mark - ChromecastControllerDelegate
+
+/**
+ * Called when chromecast devices are discoverd on the network.
+ */
+- (void)didDiscoverDeviceOnNetwork {
+    // Add the chromecast icon if not present.
+    [self showCastIcon];
+}
+
+/**
+ * Called when connection to the device was established.
+ *
+ * @param device The device to which the connection was established.
+ */
+- (void)didConnectToDevice:(GCKDevice *)device {
+    [_chromecastController updateToolbarForViewController:self];
+}
+
+/**
+ * Called when connection to the device was closed.
+ */
+- (void)didDisconnect {
+    [_chromecastController updateToolbarForViewController:self];
+}
+
+/**
+ * Called when the playback state of media on the device changes.
+ */
+- (void)didReceiveMediaStateChange {
+    [_chromecastController updateToolbarForViewController:self];
+}
+
+/**
+ * Called to display the modal device view controller from the cast icon.
+ */
+- (void)shouldDisplayModalDeviceController {
+    [self performSegueWithIdentifier:@"listDevices" sender:self];
+}
+
+/**
+ * Called to display the remote media playback view controller.
+ */
+- (void)shouldPresentPlaybackController {
+    // Select the item being played in the table, so prepareForSegue can find the
+    // associated Media object.
+    NSString *title =
+    [_chromecastController.mediaInformation.metadata stringForKey:kGCKMetadataKeyTitle];
+    int index = [self.mediaList indexOfMediaByTitle:title];
+    if (index >= 0) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+        [self.homeCollectionView selectItemAtIndexPath:indexPath animated:YES scrollPosition:UICollectionViewScrollPositionNone];
+        [self performSegueWithIdentifier:@"castMedia" sender:self];
+        
+    }
+}
 
 @end

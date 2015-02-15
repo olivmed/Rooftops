@@ -33,6 +33,7 @@
     // Initialize the chromecast device controller.
     self.chromecastDeviceController = [[ChromecastDeviceController alloc] init];
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     // Scan for devices.
     [self.chromecastDeviceController performScan:YES];
     
